@@ -1,0 +1,859 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/****variable/farver****/
+:root {
+  --black: #000000;
+  --l_beige: #f3f1e9;
+  --d_beige: #ddd1c6;
+}
+
+/*********generel***********/
+h1 {
+  margin-top: 1rem;
+  color: var(--black);
+  font-family: "Bebas Neue", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+h2 {
+  color: var(--black);
+  font-family: "Bebas Neue", serif;
+  font-size: 160%;
+  font-weight: 400;
+  font-style: normal;
+}
+h3 {
+  color: var(--black);
+  font-family: "Bebas Neue", serif;
+  font-size: 130%;
+  font-style: normal;
+}
+
+p {
+  margin-top: 0.5rem;
+  overflow-wrap: break-word;
+  font-size: 100%;
+  hyphens: auto;
+  color: var(--black);
+  font-family: "Lora", serif;
+}
+html {
+  overflow-x: hidden;
+}
+main {
+  margin-bottom: 9rem;
+}
+
+/************forside**************/
+
+.logo {
+  margin-right: auto;
+  position: absolute;
+  top: 0.3rem;
+  left: 1rem;
+  width: 2rem;
+}
+.logo:hover {
+  transform: scale(1.2);
+  transition-duration: 0.5s;
+}
+.tema2 {
+  margin-top: 3rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.tema2pil {
+  width: 2.6rem;
+  margin-top: 0.5rem;
+}
+.tema2pil:hover {
+  transform: scale(1.2);
+  transition-duration: 0.5s;
+}
+.piltilhjemmeside {
+  width: 2.6rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.piltilhjemmeside:hover {
+  transform: scale(1.2);
+  transition-duration: 0.5s;
+}
+
+.tema3 {
+  margin-top: 5rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.tema4 {
+  margin-top: 5rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.tema5 {
+  margin-top: 5rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.tema2h1 {
+  margin-top: 1rem;
+}
+
+@media (min-width: 800px) {
+  .gridforside_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .tema3 {
+    margin-top: 3rem;
+  }
+  .tema4 {
+    margin-top: -30%;
+  }
+  .tema5 {
+    margin-top: 20%;
+  }
+}
+
+/************* om mig ******************/
+.ommigoverskrift {
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 1rem;
+  margin-top: 10rem;
+}
+
+.ommigtekst1 {
+  padding-left: 7%;
+  padding-right: 7%;
+
+  margin: auto;
+  margin: 1rem auto;
+  max-width: 1000px;
+  margin-top: 2rem;
+}
+.ommigtekst2 {
+  padding-left: 7%;
+  padding-right: 7%;
+  margin: auto;
+  margin: 1rem auto;
+  max-width: 1000px;
+}
+.ommigtekst3 {
+  padding-left: 7%;
+  padding-right: 7%;
+  margin: auto;
+  margin: 1rem auto;
+  max-width: 1000px;
+}
+.ommigtekst4 {
+  padding-left: 7%;
+  padding-right: 7%;
+  margin: auto;
+  margin: 1rem auto;
+  max-width: 1000px;
+}
+.Perkusksonne {
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: var(--d_beige);
+}
+
+@media (min-width: 1000px) {
+  .displaynone2 {
+    display: none;
+  }
+}
+
+@media (max-width: 1000px) {
+  .displaynone1 {
+    display: none;
+  }
+}
+
+@media (min-width: 800px) {
+  .ommiggrid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--d_beige);
+  }
+  .Perkusksonnestor {
+    grid-column: 2/3;
+    padding-right: 4rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .ommigtekst {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+}
+
+@media (min-width: 1000px) {
+  .ommiggrid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1100px;
+  }
+  .baggrundsfarve {
+    display: grid;
+    background-color: var(--d_beige);
+    justify-content: center;
+  }
+  .Perkusksonnestor {
+    padding-top: 2rem;
+    padding-right: 7%;
+  }
+  .ommigtekst {
+    padding-top: 2.8rem;
+  }
+}
+
+@media (max-width: 1050px) {
+  .ommiggrid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .Perkusksonnestor {
+    padding-top: 3.5rem;
+
+    padding-right: 7%;
+  }
+}
+
+.cvgrid {
+  background-color: var(--l_beige);
+  padding: 20px;
+  max-width: 950px;
+  margin: 80px auto;
+  margin-bottom: -4rem;
+}
+
+.mitcv,
+.uddannelss,
+.erhvervs,
+.personlige {
+  text-align: center;
+}
+.mitcv {
+  margin-bottom: 2rem;
+}
+.uddannelss {
+  margin-bottom: 1rem;
+  margin-top: 3rem;
+}
+.erhvervs {
+  margin-bottom: 1rem;
+  margin-top: 3rem;
+}
+.personlige {
+  margin-bottom: 1rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  margin-bottom: 10px;
+}
+@media (max-width: 1000px) {
+  .cvgrid {
+    margin: 2rem;
+    margin-bottom: -6.5rem;
+  }
+}
+
+/**********    Tema 2  *************************/
+.grundlaeggendeOverskrift {
+  text-align: center;
+  margin-top: 10rem;
+}
+.grundlaeggendetekst {
+  padding-left: 7%;
+  padding-right: 7%;
+  margin: auto;
+  margin: 1rem auto;
+  max-width: 1100px;
+}
+.grundlaeggendegalleri_1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--d_beige);
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  margin-top: 1rem;
+}
+.mincomputer {
+  padding: 1.5%;
+}
+.galleri {
+  padding: 1.5%;
+}
+.komponenter {
+  padding: 1.5%;
+}
+.operativ {
+  padding: 1.5%;
+}
+
+.grid {
+  margin-top: 5rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.billedegrid {
+  margin-top: 1rem;
+}
+.responsiv {
+  margin-top: 5rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.billederesponsivt {
+  margin-top: 1rem;
+}
+.designprincipper {
+  margin-top: 5rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.billedeprincipper {
+  margin-top: 1rem;
+}
+.aestetik {
+  margin-top: 5rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.billedeaesttisk {
+  margin-top: 1rem;
+}
+
+@media (min-width: 800px) {
+  .gridtema2_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .aestetik {
+    margin-top: -15%;
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .grid {
+    margin-bottom: 30%;
+  }
+  .designprincipper {
+    margin-top: 1%;
+  }
+}
+
+/************* Tema 3 *************/
+.uxoverskrift {
+  text-align: center;
+  margin-top: 10rem;
+}
+.uxtekst {
+  padding-left: 7%;
+  padding-right: 7%;
+  margin: auto;
+  margin: 1rem auto;
+  max-width: 1100px;
+}
+.uxgalleri_1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--d_beige);
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  margin-top: 1rem;
+}
+
+.furnished {
+  padding: 1.5%;
+}
+.seneste {
+  padding: 1.5%;
+}
+.indretning {
+  padding: 1.5%;
+}
+.japandi {
+  padding: 1.5%;
+}
+.ideudvikling {
+  margin-top: 5rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.billedeideudvikling {
+  margin-top: 1rem;
+}
+.moodboards {
+  margin-top: 5rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.billedemoodboards {
+  margin-top: 1rem;
+}
+.styletile {
+  margin-top: 5rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.billedestyletile {
+  margin-top: 1rem;
+}
+.deskresearch {
+  margin-top: 5rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.billededeskresearch {
+  margin-top: 1rem;
+}
+.interview {
+  margin-top: 5rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.billedeinterview {
+  margin-top: 1rem;
+}
+.prototyping {
+  margin-top: 5rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.billedeprototyping {
+  margin-top: 1rem;
+}
+.test {
+  margin-top: 5rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.billedetest {
+  margin-top: 1rem;
+}
+.lighthouse {
+  margin-top: 5rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.billedelighthouse {
+  margin-top: 1rem;
+}
+
+@media (min-width: 800px) {
+  .gridux_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .prototyping {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .deskresearch {
+    margin-top: -30%;
+  }
+  .moodboards {
+    margin-bottom: 40%;
+  }
+  .styletile {
+    margin-top: -8px;
+  }
+  .ideudvikling {
+    margin-bottom: 10%;
+  }
+  .interview {
+    margin-top: -10%;
+  }
+  .test {
+    margin-top: -25%;
+  }
+}
+
+/************** Tema 4 **************/
+
+.anioverskift {
+  text-align: center;
+  margin-top: 10rem;
+}
+.anitekst {
+  padding-left: 7%;
+  padding-right: 7%;
+  margin: auto;
+  margin: 1rem auto;
+  max-width: 1100px;
+}
+.anigalleri_1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--d_beige);
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  margin-top: 1rem;
+}
+.forsidespil {
+  padding: 1.5%;
+}
+.spilskærm {
+  padding: 1.5%;
+}
+.duvandt {
+  padding: 1.5%;
+}
+.gameover {
+  padding: 1.5%;
+}
+.idegenerering {
+  margin-top: 5rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.billedeidegene {
+  margin-top: 1rem;
+}
+.illustrator {
+  margin-top: 5rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.billedeillu {
+  margin-top: 1rem;
+}
+.aktivi {
+  margin-top: 5rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.billedeaktivi {
+  margin-top: 1rem;
+}
+.statemachine {
+  margin-top: 5rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.billedestatemachine {
+  margin-top: 1rem;
+}
+.containersprite {
+  margin-top: 5rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.billedecontainersprite {
+  margin-top: 1rem;
+}
+.positionering {
+  margin-top: 5rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.billedepositionering {
+  margin-top: 1rem;
+}
+.animationer {
+  margin-top: 5rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.billedeanimationer {
+  margin-top: 1rem;
+}
+.javascript {
+  margin-top: 5rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.billedejavascript {
+  margin-top: 1rem;
+}
+.variabler {
+  margin-top: 5rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.billedevariabler {
+  margin-top: 1rem;
+}
+.baeredygtigtweb {
+  margin-top: 5rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.billedebaeredygtigtweb {
+  margin-top: 1rem;
+}
+@media (min-width: 800px) {
+  .gridtema4_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .baeredygtigtweb {
+    grid-column: 1/2;
+    grid-row: 5/6;
+    margin-top: -10%;
+  }
+  .statemachine {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    margin-top: 12%;
+    margin-bottom: 35%;
+  }
+  .containersprite {
+    margin-top: -25%;
+  }
+  .javascript {
+    grid-column: 1/2;
+    grid-row: 4/5;
+    margin-top: -27%;
+    margin-bottom: 60%;
+  }
+  .baeredygtigtweb {
+    margin-top: -48%;
+  }
+  .illustrator {
+    margin-bottom: 200px;
+  }
+  .aktivi {
+    margin-top: -32%;
+    margin-bottom: 30%;
+  }
+  .positionering {
+    margin-top: -17%;
+    margin-bottom: 20px;
+  }
+  .animationer {
+    margin-top: 9%;
+    margin-bottom: 30%;
+  }
+  .variabler {
+    margin-top: -18%;
+  }
+}
+
+/********************** Tema 5 ******************/
+
+.indholdoverskrift {
+  text-align: center;
+  margin-top: 10rem;
+}
+.indholdtekst {
+  padding-left: 7%;
+  padding-right: 7%;
+  margin: auto;
+  margin: 1rem auto;
+  max-width: 1100px;
+}
+.galleriindhold_1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--d_beige);
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  margin-top: 1rem;
+}
+
+.kismerforside {
+  padding: 1.5%;
+}
+.peter {
+  padding: 1.5%;
+}
+.memu {
+  padding: 1.5%;
+}
+.bageriet {
+  padding: 1.5%;
+}
+.premiere {
+  margin-top: 5rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.billedepremiere {
+  margin-top: 1rem;
+}
+.adobeaftereffects {
+  margin-top: 5rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.billedeaftereffects {
+  margin-top: 1rem;
+}
+.github {
+  margin-top: 5rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.billedegithub {
+  margin-top: 1rem;
+}
+.projektstyring {
+  margin-top: 5rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.billedeprojekt {
+  margin-top: 1rem;
+}
+@media (min-width: 800px) {
+  .tema5_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .projektstyring {
+    margin-top: 2%;
+  }
+}
+
+/********Footer*********/
+footer {
+  background-color: var(--d_beige);
+  padding-bottom: 10rem;
+}
+.instagram {
+  width: 3rem;
+  margin-right: 10px;
+}
+.facebook {
+  width: 3rem;
+  margin-bottom: 5rem;
+}
+
+.instaface {
+  display: flex;
+  margin-top: 1rem;
+}
+.footerkontakt {
+  padding-top: 2rem;
+  padding-left: 2rem;
+}
+
+.instagram:hover {
+  transform: scale(1.2);
+  transition-duration: 0.5s;
+}
+
+.facebook:hover {
+  transform: scale(1.2);
+  transition-duration: 0.5s;
+}
+
+/*********************** Burgermenu ******************/
+.lottiefilehero {
+  position: relative;
+}
+.menu {
+  display: flex;
+  position: absolute;
+  top: 0.5rem;
+  right: -3.5rem;
+  list-style: none;
+}
+.menu li {
+  margin-right: 70px;
+  font-size: 180%;
+}
+.menu li:hover {
+  transform: scale(1.2);
+  transition-duration: 0.5s;
+}
+.menu li a {
+  text-decoration: none;
+  color: black;
+  font-family: "Bebas Neue", serif;
+  font-weight: 100;
+  font-style: normal;
+}
+.menu li a.active {
+  border-bottom: 3px solid black;
+  color: #000000;
+}
+
+.burger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 25px;
+}
+
+.burger .line {
+  height: 4px;
+  width: 100%;
+  background: black;
+  border-radius: 2px;
+}
+
+.burger.active .line:nth-child(1) {
+  transform: rotate(45deg) translate(9px, 9px);
+}
+
+.burger.active .line:nth-child(2) {
+  opacity: 0;
+}
+
+.burger.active .line:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -6px);
+}
+
+@media (max-width: 800px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    background: var(--l_beige);
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-right: 4rem;
+    padding-left: 8.5rem;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 1);
+  }
+
+  nav.active .menu {
+    display: flex;
+  }
+
+  .burger {
+    display: flex;
+    position: absolute;
+    top: 0.6rem;
+    right: 1rem;
+  }
+  .burger:hover {
+    transform: scale(1.2);
+    transition-duration: 0.5s;
+  }
+}
